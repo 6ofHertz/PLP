@@ -1,0 +1,27 @@
+# Step 1: Create and write to the input file
+with open("input.txt", "w") as file:
+    file.write("This is the first line of text.\n")
+    file.write("Here comes the second line of text.\n")
+    file.write("Another line to add to the file.\n")
+    file.write("Python is a fun language to learn.\n")
+    file.write("This is the final line of our example text.\n")
+
+# Step 2: Read the contents of the file and process it
+with open("input.txt", "r") as file:
+    content = file.read()
+
+# Count the number of words in the file
+word_count = len(content.split())
+
+# Convert the text to uppercase
+processed_content = content.upper()
+
+# Prepare the output content
+output_content = processed_content + f"\n\nWord Count: {word_count}\n"
+
+# Step 3: Write to the output file
+with open("output.txt", "w") as file:
+    file.write(output_content)
+
+# Step 4: Print a success message
+print("Success! The processed text and word count have been written to output.txt.")
