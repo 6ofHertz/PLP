@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egghead Co. | Tech, Cloud & Cybersecurity Consulting</title>
+    <meta name="description" content="Freelance consulting for businesses in cloud computing, cybersecurity, IT solutions, and corporate training.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Egghead Co.</h1>
+        <p>Tech, Cloud & Cybersecurity Consulting</p>
+    </header>
+    <nav>
+        <a href="#process">Our Process</a>
+        <a href="#contacts">Our Team</a>
+        <a href="#register">Register</a>
+    </nav>
+
+    <div class="container">
+        <!-- Ordered List with Roman Numerals -->
+        <section id="process">
+            <h2>Our Development Process</h2>
+            <ol class="roman-list">
+                <li>Requirement Analysis</li>
+                <li>System Design</li>
+                <li>Implementation</li>
+                <li>Testing</li>
+                <li>Deployment</li>
+            </ol>
+        </section>
+
+        <!-- External Image from Pexels -->
+        <section>
+            <h2>Our Tech Solutions</h2>
+            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" 
+                 alt="Computer with code on screen" 
+                 class="external-image">
+        </section>
+
+        <!-- Contacts Table -->
+        <section id="contacts">
+            <h2>Our Expert Team</h2>
+            <table class="contacts-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Specialty</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sarah Johnson</td>
+                        <td>Cloud Architecture</td>
+                        <td>123 Tech Blvd, San Francisco</td>
+                        <td>555-0101</td>
+                        <td>sarah.j@egghead.co</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Chen</td>
+                        <td>Cybersecurity</td>
+                        <td>456 Security Lane, Boston</td>
+                        <td>444-9865</td>
+                        <td>michael.c@egghead.co</td>
+                    </tr>
+                    <tr>
+                        <td>David Wilson</td>
+                        <td>DevOps Engineering</td>
+                        <td>789 Automation St, Austin</td>
+                        <td>220-2356</td>
+                        <td>david.w@egghead.co</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Rodriguez</td>
+                        <td>Data Analytics</td>
+                        <td>321 Data Drive, New York</td>
+                        <td>369-0214</td>
+                        <td>emily.r@egghead.co</td>
+                    </tr>
+                    <tr>
+                        <td>James Peterson</td>
+                        <td>AI & Machine Learning</td>
+                        <td>741 Algorithm Ave, Seattle</td>
+                        <td>555-2147</td>
+                        <td>james.p@egghead.co</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="register" class="registration-form">
+            <h2>Consultation Request</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Needed:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option>Cloud Solutions</option>
+                        <option>Cybersecurity</option>
+                        <option>DevOps & Automation</option>
+                        <option>Data Analytics</option>
+                        <option>AI Consulting</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Consultation Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Consultation Type:</label>
+                    <div>
+                        <input type="radio" name="consult-type" id="remote" required>
+                        <label for="remote">Remote</label>
+                        <input type="radio" name="consult-type" id="onsite">
+                        <label for="onsite">On-site</label>
+                    </div>
+                </div>
+                <button type="submit">Request Consultation</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Egghead Co. | Freelance Tech Consulting</p>
+        <p>Contact: <a href="mailto:contact@eggheadco.com">contact@eggheadco.com</a></p>
+    </footer>
+</body>
+</html>
